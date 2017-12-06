@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.mihaistanica.helloandroid.MainActivity">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:src="@drawable/udacity_top"
+            android:id="@+id/top"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:src="@drawable/logo"
+            android:layout_alignBottom="@id/top"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="@string/adress"
+                android:paddingLeft="60dp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_place_black_24dp"
+                style="@style/textStyle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+                android:paddingLeft="60dp"
+                android:gravity="center"
+                android:text="@string/phone"
+                style="@style/textStyle"
+                android:autoLink="phone"
+                android:textColorLink="#1E88E5"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:drawableLeft="@drawable/ic_web_blue_24dp"
+                android:paddingLeft="60dp"
+                android:text="@string/web"
+                android:gravity="center"
+                style="@style/textStyle"
+                android:autoLink="web"
+                android:textColorLink="@color/textColor"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
